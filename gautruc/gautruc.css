@@ -1,0 +1,98 @@
+/* Đặt phông chữ và màu nền chung */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Màu xanh nhạt nhẹ nhàng */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Tiêu đề trang */
+h1 {
+    background-color: #8ecae6; /* Màu xanh dương nhạt */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5em;
+    border-bottom: 5px solid #219ebc; /* Viền nổi bật */
+}
+
+/* Tiêu đề phụ */
+h2 {
+    color: #219ebc;
+    margin-top: 30px;
+    font-size: 1.8em;
+}
+
+h3 {
+    color: #219ebc;
+    margin-top: 20px;
+    font-size: 1.6em;
+}
+
+/* Đoạn văn bản */
+p, dt {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+/* Định dạng danh sách mô tả */
+dd {
+    margin-left: 20px;
+    padding-left: 15px;
+    border-left: 3px solid #8ecae6;
+    color: #555;
+}
+
+/* Hình ảnh */
+img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Video */
+video {
+    max-width: 80%;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Liên kết */
+a {
+    color: #219ebc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #023047;
+}
+
+/* Phần tử div tổng */
+div {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tạo khoảng cách dưới cho các phần */
+h2, h3, p, dt, img, video {
+    margin-bottom: 20px;
+}
+
+/* Hiệu ứng nhẹ cho ảnh và video */
+img:hover, video:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
