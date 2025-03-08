@@ -1,0 +1,33 @@
+/* Đảm bảo hình ảnh co dãn trong khung */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Thiết kế lưới động vật hiển thị linh hoạt trên các thiết bị */
+.animal-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 16px;
+}
+
+/* Đảm bảo chữ dễ đọc trên mọi thiết bị */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Thêm media queries để responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
