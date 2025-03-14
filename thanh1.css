@@ -57,3 +57,94 @@ a {
     color: inherit;
     text-decoration: none;
 }
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Căn giữa tiêu đề */
+    background-color: #111;
+    padding: 20px;
+    position: relative; /* Giữ logo đúng vị trí */
+    height: 100px; /* Tăng chiều cao để tránh đè lên nhau */
+}
+
+.logo {
+    position: absolute;
+    left: 20px; /* Logo sát mép trái */
+    top: 50%;
+    transform: translateY(-50%); /* Căn giữa theo chiều dọc */
+}
+
+.logo img {
+    height: 80px;
+}
+
+.title {
+    color: orange;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+.menu {
+    background-color: #222; /* Màu nền menu */
+    text-align: center;
+    padding: 10px 0;
+}
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.menu ul li {
+    margin: 0 15px;
+}
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.menu ul li a:hover {
+    background-color: orange;
+}
+.animal-list div {
+    margin: 10px;
+    text-align: center;
+}
+
+.animal-list img {
+    width: 200px; /* Điều chỉnh kích thước phù hợp */
+    height: auto;
+    border-radius: 10px; /* Bo góc nhẹ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #111;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+.qr-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer img {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+}
+#thanh4 {color: #ff8c00;    }
