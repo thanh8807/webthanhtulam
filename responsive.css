@@ -21,13 +21,63 @@ body {
     box-sizing: border-box;
 }
 
-/* Thêm media queries để responsive */
+/* Điều chỉnh kích thước chữ trên thiết bị nhỏ */
 @media (max-width: 768px) {
     h1 {
         font-size: 24px;
     }
-
     p {
         font-size: 14px;
+    }
+}
+
+/* Định dạng khu vực chứa bản đồ */
+.map-container {
+    position: relative; /* Đảm bảo phần tử con định vị chính xác */
+    background: #1a1a1a; /* Nền tối cho phần chứa bản đồ */
+    padding: 20px; /* Tạo khoảng cách để chữ không dính vào mép */
+    border-radius: 12px; /* Bo góc */
+    box-shadow: 2px 2px 15px rgba(255, 165, 0, 0.4); /* Đổ bóng màu cam nhạt */
+    text-align: center; /* Căn giữa nội dung */
+    width: fit-content; /* Tự động co theo nội dung */
+    margin: 20px auto; /* Căn giữa */
+}
+
+/* Chỉnh lại tiêu đề */
+.map-container h2 {
+    color: #ffa500; /* Màu cam nổi bật */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Chỉnh lại phần iframe bản đồ */
+.map-container iframe {
+    width: 500px; /* Kích thước chuẩn */
+    height: 300px;
+    border-radius: 8px; /* Bo góc nhẹ */
+    border: 2px solid #ffa500; /* Viền màu cam */
+}
+
+/* Chỉnh lại phần chữ ký */
+#thanh {
+    text-align: center;
+    font-size: 18px;
+    color: #ffa500;
+    font-weight: bold;
+    margin-top: 10px;
+}
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 480px) {
+    .map-container {
+        width: 90%;
+        height: auto;
+        top: auto;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .map-container iframe {
+        height: 250px;
     }
 }
